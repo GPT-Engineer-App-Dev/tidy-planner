@@ -51,7 +51,7 @@ const Index = () => {
         <Text fontSize="2xl" fontWeight="bold">Todo App</Text>
         <Box display="flex" width="100%">
           <Input placeholder="Add a new task" value={input} onChange={(e) => setInput(e.target.value)} />
-          <Button onClick={handleAddTask} ml={2}>Add</Button>
+          <Button onClick={handleAddTask} ml={2} colorScheme="green">Add</Button>
         </Box>
         <List width="100%">
           {tasks.map((task, index) => (
